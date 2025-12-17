@@ -160,10 +160,6 @@ tasks:
   # 🗄️ Database Setup & Cleanup
   ############################################################
 
-  - action: move_path
-    src: ./tmp/azureframework/server.cfg
-    dest: ./server.cfg
-
   # 🔗 Connect Database
   - action: connect_database
 

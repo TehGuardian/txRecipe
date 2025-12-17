@@ -52,7 +52,7 @@ tasks:
 
   # 🏛️ Azure-Framework (fetch the Azure-Framework folder directly)
   - action: download_github
-    src: https://github.com/Azure-Framework/Azure-Framework
+    src: https://github.com/Azure-Framework/Az-Framework
     ref: main
     subpath: Azure-Framework
     dest: ./resources/Azure-Framework

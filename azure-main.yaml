@@ -27,17 +27,6 @@ tasks:
     src: ./tmp/pma-voice.zip
     dest: ./resources/[dependencies]/pma-voice
 
-  ############################################################
-  # 🗄️ Database Setup & Cleanup
-  ############################################################
-
-  - action: move_path
-    src: ./tmp/azureframework/server.cfg
-    dest: ./server.cfg
-
-  # 🔗 Connect Database
-  - action: connect_database
-
   # 💾 oxmysql (Database Wrapper)
   - action: download_file
     url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
@@ -166,6 +155,17 @@ tasks:
   - action: unzip
     src: ./tmp/Az-5PD.zip
     dest: ./resources/[framework]/Az-5PD
+
+  ############################################################
+  # 🗄️ Database Setup & Cleanup
+  ############################################################
+
+  - action: move_path
+    src: ./tmp/azureframework/server.cfg
+    dest: ./server.cfg
+
+  # 🔗 Connect Database
+  - action: connect_database
 
   # 🧹 Cleanup Temporary Files
   - action: remove_path
